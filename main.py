@@ -5,8 +5,8 @@ sleep = time.sleep
 
 print("File reader! Automatically read through any txt doc/docx or PDF document\nNo skipping! No stopping! Finish the text!\n")
 
-location = None # location of the file is stored in memory
-query_web = input("Is it on the web or is it saved on your computer? (WEB/COMPUTER) ").lower() # whether it is on the web or on the local device stored in memory
+location = None 
+query_web = input("Is it on the web or is it saved on your computer? (WEB/COMPUTER) ").lower()
 if query_web == "web":
     print("Selected: web")
     location = input("Where is it on the web? (LINK) ")
@@ -18,8 +18,8 @@ else:
 
 print("Ok. Just two more questions.")
 
-lines_per = int(input("How many lines should appear at once? (TIMES) ")) # lines per occurance stored in memory
-occurance = int(input("How often should it appear? (SECONDS) ")) # occurance is stored in memory
+lines_per = int(input("How many lines should appear at once? (TIMES) "))
+occurance = int(input("How often should it appear? (SECONDS) "))
 
 def text():
     if query_web == "web":
