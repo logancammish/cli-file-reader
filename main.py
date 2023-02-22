@@ -24,14 +24,10 @@ occurance = int(input("How often should it appear? (SECONDS) ")) # occurance is 
 def text():
     if query_web == "web":
         print("Ok. It's a web file at " + location)
-        print("\nPreparing...\n")
-        print(location + "\n\n")
         data = urlopen(location)
         return data
     elif query_web == "computer":
         print("Ok. It's a local file at " + location)
-        print("\nPreparing...\n")
-        print("'" + location + "':\n\n")
         out = open(location, "r")
         out = out.readlines()
         return out
@@ -47,4 +43,7 @@ def print_text(text):
             i=0
             sleep(occurance) 
 
+            
+print("\nPreparing...\n")
+print("'" + location + "':\n\n")
 print_text(text())
